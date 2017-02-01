@@ -17,8 +17,10 @@
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
-        the_post_thumbnail(null,array('class'=>'vertu2017-entry-header-img') );
-        ?>
+		?>
+        <div class="vertu2017-entry-header-img">
+        <?php the_post_thumbnail(); ?>
+        </div>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
