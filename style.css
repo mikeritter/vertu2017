@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Vertu Marketing
 Author URI: http://vertu-marketing.com
 Description: vertu marketing makeover
-Version: 0.1.9
+Version: 0.1.10
 License: GNU General Public License v2 or later
 Text Domain: vertu2017
 Tags:
@@ -983,4 +983,15 @@ blog page post category containers
 	max-width: 37.5em;
 	margin: auto;
 	display: block;
+}
+
+/* WooCommerce button color*/
+/*
+.woocommerce #respond input#submit.alt.disabled, .woocommerce #respond input#submit.alt.disabled:hover, .woocommerce #respond input#submit.alt:disabled, .woocommerce #respond input#submit.alt:disabled:hover, .woocommerce #respond input#submit.alt[disabled]:disabled, .woocommerce #respond input#submit.alt[disabled]:disabled:hover, .woocommerce a.button.alt.disabled, .woocommerce a.button.alt.disabled:hover, .woocommerce a.button.alt:disabled, .woocommerce a.button.alt:disabled:hover, .woocommerce a.button.alt[disabled]:disabled, .woocommerce a.button.alt[disabled]:disabled:hover, .woocommerce button.button.alt.disabled, .woocommerce button.button.alt.disabled:hover, .woocommerce button.button.alt:disabled, .woocommerce button.button.alt:disabled:hover, .woocommerce button.button.alt[disabled]:disabled, .woocommerce button.button.alt[disabled]:disabled:hover, .woocommerce input.button.alt.disabled, .woocommerce input.button.alt.disabled:hover, .woocommerce input.button.alt:disabled, .woocommerce input.button.alt:disabled:hover, .woocommerce input.button.alt[disabled]:disabled, .woocommerce input.button.alt[disabled]:disabled:hover {
+    background-color: #66cc33;
+}
+*/
+
+.single_add_to_cart_button {
+	background-color: #66cc33 !important;
 }
