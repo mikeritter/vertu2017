@@ -199,3 +199,18 @@ function vertu_custom_excerpt_length( $length ) {
     return 24;
 }
 add_filter( 'excerpt_length', 'vertu_custom_excerpt_length', 999 );
+
+/**
+ * Declare Sensei Support
+ *
+ * Using default theme for _s
+ *
+ * @link https://docs.woocommerce.com/document/sensei-and-theme-compatibility/
+ */
+
+add_action( 'after_setup_theme', 'declare_sensei_support' );
+function declare_sensei_support() {
+    add_theme_support( 'sensei' );
+}
+
+
