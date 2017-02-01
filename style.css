@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Vertu Marketing
 Author URI: http://vertu-marketing.com
 Description: vertu marketing makeover
-Version: 0.1.8
+Version: 0.1.9
 License: GNU General Public License v2 or later
 Text Domain: vertu2017
 Tags:
@@ -506,11 +506,11 @@ a {
 	text-decoration: none;
 	border-bottom: dotted 1px #ccc;
 }
-
+/*
 a:visited {
 	color: #FF962A;
 }
-
+*/
 a:hover,
 a:focus,
 a:active {
@@ -909,6 +909,7 @@ CUSTOMIZATIONS
 .site{
 	max-width: 1280px;
 	margin: 0 auto;
+	padding: 0px 12px;
 }
 
 .toggled{
@@ -966,7 +967,7 @@ blog page post category containers
 
 .post-category-container .widget-title{
 	font-size:150%;
-	background-color: orange;
+	background-color: #F06218;
 	color: white;
 	font-weight: bold;
 	border: none;
