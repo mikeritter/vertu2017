@@ -17,12 +17,12 @@
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
-		?>
+        the_post_thumbnail(null,array('class'=>'vertu2017-entry-header-img') );
+        ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<?php
-            the_post_thumbnail();
 			the_content( sprintf(
 				/* translators: %s: Name of current post. */
 				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'vertu2017' ), array( 'span' => array( 'class' => array() ) ) ),
