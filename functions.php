@@ -172,3 +172,30 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Custom read more link on excerpt pages
+ *
+ * See https://codex.wordpress.org/Customizing_the_Read_More
+ *
+ * @param $more
+ * @return string 'string'
+ */
+function vertu_excerpt_more($more) {
+    global $post;
+    return '... <a class="moretag" href="'. get_permalink($post->ID) . '">' . __('Continue','vertu')  . '</a>';
+}
+add_filter('excerpt_more', 'vertu_excerpt_more');
+
+/**
+ * Filter the except length to 20 characters.
+ *
+ * https://developer.wordpress.org/reference/functions/the_excerpt/
+ *
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
+ */
+function vertu_custom_excerpt_length( $length ) {
+    return 24;
+}
+add_filter( 'excerpt_length', 'vertu_custom_excerpt_length', 999 );
