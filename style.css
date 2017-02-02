@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Vertu Marketing
 Author URI: http://vertu-marketing.com
 Description: vertu marketing makeover
-Version: 0.3.5
+Version: 0.3.6
 License: GNU General Public License v2 or later
 Text Domain: vertu2017
 Tags:
@@ -1008,4 +1008,13 @@ blog page post category containers
 	background-color: #66cc33 !important;
 	color: #fff;
 	-webkit-font-smoothing: antialiased;
+}
+
+.gradient-steel{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efefef+0,000000+100 */
+	background: #efefef; /* Old browsers */
+	background: -moz-linear-gradient(top,  #efefef 0%, #000000 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #efefef 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #efefef 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 }
