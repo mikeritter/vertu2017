@@ -21,6 +21,7 @@
         <div class="vertu2017-entry-header-img">
         <?php the_post_thumbnail(); ?>
         </div>
+
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

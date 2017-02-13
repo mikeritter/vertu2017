@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Vertu Marketing
 Author URI: http://vertu-marketing.com
 Description: vertu marketing makeover
-Version: 0.3.6
+Version: 0.4.1
 License: GNU General Public License v2 or later
 Text Domain: vertu2017
 Tags:
@@ -916,21 +916,33 @@ object {
 /*
 CUSTOMIZATIONS
  */
+.site-header{
+	background: #0a0a0a;
+	padding-bottom: 1rem;
+}
 
 .site{
 	margin: 0 auto;
 }
 
 #content{
-	padding: 1.5rem;
+	padding: 0rem;
 }
 
 .toggled{
 	transition: all 500ms linear;
 }
 
+
 .main-navigation a{
 	border: none;
+	display: block;
+	border-bottom: solid 1px rgba(0,0,0,0);
+}
+
+#primary-menu a:hover,.current-menu-item{
+	border-bottom: solid 1px rgba(255,150,42,1);
+	transition: all 500ms linear;
 }
 
 @media screen and (min-width: 37.5em){
@@ -938,7 +950,6 @@ CUSTOMIZATIONS
 	.site-header{
 		display: table;
 		width: 100%;
-		position: fixed;
 		z-index: 999;
 	}
 
@@ -963,13 +974,15 @@ CUSTOMIZATIONS
 	}
 	ul#primary-menu{
 		display: table;
-		width: 100%;
+/*		width: 100%;
 		table-layout: auto;
+		text-align: center; */
 	}
 
 	ul#primary-menu > li{
-		display: table-cell;
-		float: none;
+/*		display: table-cell;
+		float: none; */
+		display: inline-block;
 	}
 }
 
@@ -1018,3 +1031,19 @@ blog page post category containers
 	background: linear-gradient(to bottom,  #efefef 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 }
+
+.site-header-logo{
+	display: block;
+	margin: auto;
+	max-width: 12.5em;
+}
+
+.ver-row{
+	display: flex;
+	align-items: center;
+}
+
+.ver-col{
+	flex-grow: 1;
+}
+
