@@ -20,7 +20,7 @@ function vertu2017_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'vertu2017_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
-		'width'                  => 1600,
+		'width'                  => 450,
 		'height'                 => 450,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'vertu2017_header_style',

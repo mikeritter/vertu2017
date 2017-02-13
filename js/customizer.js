@@ -21,6 +21,7 @@
 	} );
 
 	// Header text color.
+	/*
 	wp.customize( 'header_textcolor', function( value ) {
 		value.bind( function( to ) {
 			if ( 'blank' === to ) {
@@ -38,5 +39,6 @@
 				} );
 			}
 		} );
-	} );
+
+	} );*/
 } )( jQuery );
